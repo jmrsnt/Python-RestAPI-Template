@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "src"
+version = "0.0.1"
+description = ""
+authors = ["Jackson Santos <jmrsnt@icloud.com>"]
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.101.1"
+uvicorn = {extras = ["standard"], version = "^0.23.2"}
+sqlalchemy = "^2.0.20"
+psycopg2 = "^2.9.7"
+python-jose = "^3.3.0"
+passlib = "^1.7.4"
+poetry-dotenv-plugin = "^0.2.0"
+requests = "^2.31.0"
+python-dotenv = "^1.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
